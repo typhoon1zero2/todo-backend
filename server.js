@@ -11,9 +11,11 @@ const todoController = require('./controllers/todo');
 
 
 
+
 /*********************************
  *  Middleware
  *********************************/
+
 app.use(cors());
 app.use(express.json());
 app.use('/todos', todoController);
